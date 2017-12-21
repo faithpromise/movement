@@ -1,0 +1,100 @@
+$Popup-icon-size: 128px;
+
+.Popup {
+  padding: 0 3vw 20vw;
+
+  a {
+    text-decoration: underline;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+
+.Popup-content {
+
+  position:         relative;
+  max-width:        680px;
+  margin:           0 auto;
+  padding-top:      3em;
+  padding-bottom:   3em;
+  border-radius:    8px;
+  background-color: #fff;
+}
+
+.Popup-close {
+  position: absolute;
+  top:      .5em;
+  right:    .5em;
+  padding:  .5em;
+  cursor:   pointer;
+
+  &:hover > svg {
+    fill: $color-gray-dark;
+  }
+
+  > svg {
+    height: 22px;
+    width:  22px;
+    fill:   $color-gray;
+  }
+}
+
+.Popup-icon {
+  height:           $Popup-icon-size;
+  width:            $Popup-icon-size;
+  margin:           -($Popup-icon-size / 2) auto 0;
+  padding:          $Popup-icon-size * .1 0;
+  text-align:       center;
+  border:           8px solid #fff;
+  border-radius:    $Popup-icon-size;
+
+  background-color: $color-brand-blue;
+
+  > svg {
+    height: $Popup-icon-size / 1.5;
+    width:  $Popup-icon-size / 1.5;
+    fill:   darken($color-brand-blue, 30%);
+  }
+}
+
+.Popup {
+
+  h1, h3, p, ul, table {
+
+    @include fluid-size(margin-left, 320px, 16px, 680px, 48px);
+    @include fluid-size(margin-right, 320px, 16px, 680px, 48px);
+  }
+
+  h1 {
+    line-height:    1.2;
+    text-transform: uppercase;
+    text-align:     center;
+    font-weight:    300;
+  }
+
+  h2 {
+
+    @include fluid-size(padding-left, 320px, 16px, 680px, 48px);
+    @include fluid-size(padding-right, 320px, 16px, 680px, 48px);
+
+    margin-top:       2em;
+    padding-top:      .5em;
+    padding-bottom:   .5em;
+    text-transform:   uppercase;
+    font-weight:      300;
+    background-color: $color-brand-blue;
+    color:            darken($color-brand-blue, 50%);
+  }
+
+  h3 {
+    margin-top:    2em;
+    margin-bottom: .5em;
+    font-weight:   500;
+  }
+
+  p {
+    margin-top: .5em;
+  }
+
+}

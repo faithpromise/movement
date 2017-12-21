@@ -1,0 +1,14 @@
+@mixin text-truncate() {
+  display:       block;
+  overflow:      hidden;
+  white-space:   nowrap;
+  text-overflow: ellipsis;
+}
+
+%text-truncate {
+  @include text-truncate;
+}
+
+.text-truncate {
+  @extend %text-truncate;
+}

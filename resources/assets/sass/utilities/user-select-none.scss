@@ -1,0 +1,8 @@
+@mixin user-select-none() {
+  user-select: none;
+  cursor:      default;
+}
+
+%user-select-none {
+  @include user-select-none;
+}

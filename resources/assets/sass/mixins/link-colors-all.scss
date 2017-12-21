@@ -1,0 +1,3 @@
+@mixin link-colors-all($color) {
+  @include link-colors($color, $color, $color, $color, $color);
+}

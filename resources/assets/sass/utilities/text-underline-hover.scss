@@ -1,0 +1,10 @@
+@mixin text-underline-hover() {
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+%text-underline-hover {
+  @include text-underline-hover;
+}

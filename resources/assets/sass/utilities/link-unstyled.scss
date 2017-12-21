@@ -1,0 +1,15 @@
+@mixin link-unstyled() {
+  @include link-colors-all(currentColor);
+
+  &, &:hover {
+    text-decoration: none;
+  }
+}
+
+%link-unstyled {
+  @include link-unstyled;
+}
+
+.link-unstyled {
+  @extend %link-unstyled;
+}

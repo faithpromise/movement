@@ -1,0 +1,19 @@
+@function strip-unit($value) {
+  @return $value / ($value * 0 + 1);
+}
+
+@function calc-px($size) {
+  @return $size * 1px;
+}
+
+@function calc-em($target-px, $context: $font-size) {
+  @return (strip-unit($target-px) / strip-unit($context)) * 1em;
+}
+
+@function calc-rem($target-px) {
+  @return ($target-px / $font-size) * 1rem;
+}
+
+@function calc-percent($target-px, $context: $font-size) {
+  @return percentage($target-px / $context);
+}

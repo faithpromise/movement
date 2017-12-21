@@ -11,5 +11,15 @@ let mix = require('laravel-mix');
  |
  */
 
+mix.webpackConfig({
+    externals: {
+        'axios':        'axios',
+        'moment':       'moment',
+        'vue':          'Vue'
+    },
+});
+
+mix.options({ processCssUrls: false });
+
 mix.js('resources/assets/js/app.js', 'public/js')
    .sass('resources/assets/sass/app.scss', 'public/css');

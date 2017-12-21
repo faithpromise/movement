@@ -1,0 +1,27 @@
+@mixin fluid-size($properties, $min_viewport: 320px, $min_size: 16px, $max_viewport: 1280px, $max_size: 21px) {
+
+  // https://zellwk.com/blog/viewport-based-typography/
+  // http://www.sassmeister.com/gist/7f22e44ace49b5124eec
+  // https://gist.github.com/indrekpaas/7f22e44ace49b5124eec
+
+  @each $property in $properties {
+    #{$property}: calc-rem($min_size);
+  }
+
+  $viewport_diff: strip-unit($max_viewport - $min_viewport);
+  $font_size_diff: strip-unit($max_size - $min_size);
+
+  @media screen and (min-width: $min_viewport) {
+    @each $property in $properties {
+      #{$property}: calc(#{calc-rem($min_size)} + #{$font_size_diff} * (100vw - #{$min_viewport}) / #{$viewport_diff});
+      //#{$property}: -webkit-calc(#{calc-percent($min_size)} + #{$font_size_diff} * (100vw - #{$min_viewport}) / #{$viewport_diff});
+    }
+  }
+
+  @media (min-width: $max_viewport) {
+    @each $property in $properties {
+      #{$property}: calc-rem($max_size);
+    }
+  }
+
+}

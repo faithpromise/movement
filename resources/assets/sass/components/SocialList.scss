@@ -1,0 +1,20 @@
+.SocialList {
+  @extend %list-unstyled;
+  display: inline-flex;
+}
+
+.SocialList-item {
+  margin-right: .25em;
+  margin-left:  .25em;
+}
+
+.SocialList-link {
+  @extend %link-unstyled;
+  @include link-colors-all(currentColor);
+}
+
+.SocialIcon {
+  height: 1em;
+  width:  1em;
+  fill:   currentColor;
+}

@@ -1,0 +1,39 @@
+
+.Countdown {
+  @extend .Section;
+  background-color: $color-brand-green;
+  color:            #fff;
+}
+
+.Countdown-container {
+  @extend .Section-container;
+}
+
+.Countdown-title {
+  @extend .Section-title;
+  @include fluid-type(320px, 48px, 1080px, 100px);
+  line-height: 1;
+  color:       darken($color-brand-green, 25%);
+  text-shadow: 0 1px 0 rgba(255, 255, 255, .4);
+}
+
+.Countdown-clock {
+  display: flex;
+}
+
+.Countdown-slot {
+  text-align: center;
+}
+
+.Countdown-digit {
+  @include fluid-type(320px, 60px, 1080px, 100px);
+  padding:     0 .24em;
+  font-family: "bebas-neue", sans-serif;
+  line-height: 1;
+}
+
+.Countdown-label {
+  @include fluid-type(320px, 17px, 1080px, 30px);
+  display:     block;
+  font-weight: 400;
+}

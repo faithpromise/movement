@@ -1,0 +1,29 @@
+.SpeakerCard {
+  text-align: center;
+}
+
+.SpeakerCard-image {
+  //width:     100%;
+  //max-width: calc-em(530px);
+}
+
+//.SpeakerCard-info {
+//  //display:         flex;
+//  justify-content: space-between;
+//  align-items:     center;
+//  margin:          1em 0;
+//}
+
+.SpeakerCard-name {
+  @include fluid-type(320px, 20px, 780px, 24px);
+  @include fluid-type(781px, 20px, 1080px, 26px);
+  //flex-grow:   1;
+  margin:      .6em 0 0;
+  font-weight: normal;
+}
+
+.SpeakerCard-social {
+  margin-top: calc-em(8px, 24px);
+  font-size:  calc-em(24px);
+  color:      $color-gray-dark;
+}

@@ -1,0 +1,18 @@
+.link-complex {
+
+  @include link-colors-all(currentColor);
+
+  &,
+  &:hover {
+    text-decoration: none;
+  }
+
+  &:hover .link-complex-target {
+    text-decoration: underline;
+  }
+
+  .link-complex-target {
+    @extend .link;
+  }
+
+}

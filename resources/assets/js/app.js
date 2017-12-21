@@ -1,22 +1,17 @@
+import scheduleTabs from './components/schedule-tabs.js';
+import countdown from './components/countdown.js';
 
-/**
- * First we will load all of this project's JavaScript dependencies which
- * includes Vue and other libraries. It is a great starting point when
- * building robust, powerful web applications using Vue and Laravel.
- */
+function ready(fn) {
+    if (document.attachEvent ? document.readyState === "complete" : document.readyState !== "loading") {
+        fn();
+    } else {
+        document.addEventListener('DOMContentLoaded', fn);
+    }
+}
 
-require('./bootstrap');
+ready(() => {
 
-window.Vue = require('vue');
+    scheduleTabs.init();
+    countdown.init();
 
-/**
- * Next, we will create a fresh Vue application instance and attach it to
- * the page. Then, you may begin adding components to this application
- * or customize the JavaScript scaffolding to fit your unique needs.
- */
-
-Vue.component('example-component', require('./components/ExampleComponent.vue'));
-
-const app = new Vue({
-    el: '#app'
 });

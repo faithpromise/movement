@@ -1,0 +1,28 @@
+a,
+.link {
+  color:           $anchor-color;
+  text-decoration: none;
+  cursor:          pointer;
+
+  &:visited {
+    color: $anchor-color-visited;
+  }
+
+  &:hover {
+    text-decoration: underline;
+    color:           $anchor-color-hover;
+  }
+
+  &:active {
+    color: $anchor-color-active;
+  }
+}
+
+.unlink {
+  &, &:link, &:visited, &:hover, &:active {
+    color: inherit;
+  }
+  &:hover {
+    text-decoration: none;
+  }
+}

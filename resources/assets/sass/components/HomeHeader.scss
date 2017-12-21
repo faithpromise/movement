@@ -1,0 +1,50 @@
+.HomeHeader {
+  @include fluid-size(height, 320px, 560px, 1400px, 780px);
+  @extend %ratio-image;
+  background-color: $color-gray-darkest;
+  color:            $color-white;
+}
+
+.HomeHeader-overlay,
+.HomeHeader-container {
+  position: absolute;
+  top:      0;
+  right:    0;
+  bottom:   0;
+  left:     0;
+}
+
+.HomeHeader-overlay {
+  background-color: rgba(0, 0, 0, .1);
+}
+
+.HomeHeader-container {
+  display:         flex;
+  flex-direction:  column;
+  justify-content: center;
+  align-items:     center;
+}
+
+.HomeHeader-title {
+  @include fluid-type(320px, 72px, 1400px, 140px);
+  font-family: "bebas-neue", sans-serif;
+  color:       inherit;
+}
+
+.HomeHeader-dates {
+  @include fluid-type(320px, 36px, 1400px, 60px);
+  font-family: "bebas-neue", sans-serif;
+}
+
+.HomeHeader-title,
+.HomeHeader-dates,
+.HomeHeader-social {
+  flex-shrink: 1;
+  margin:      0;
+  line-height: 1;
+}
+
+.HomeHeader-social {
+  @include fluid-type(320px, 32px, 1400px, 48px);
+  margin-top: 1em;
+}

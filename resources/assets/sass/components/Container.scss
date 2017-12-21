@@ -1,0 +1,11 @@
+%Container {
+  @include container();
+}
+
+%container-padding {
+  @include container-padding();
+}
+
+.Container {
+  @extend %Container;
+}

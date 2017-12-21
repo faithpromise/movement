@@ -1,0 +1,132 @@
+$DetailsItem-icon-size: 56px;
+$DetailsList-gutter: 48px;
+
+.DetailsList {
+  @extend %list-unstyled;
+  display:     flex;
+  flex-wrap:   wrap;
+  margin-left: -$DetailsList-gutter;
+}
+
+.DetailsList-item {
+  width:          100%;
+  padding-left:   $DetailsList-gutter;
+  padding-bottom: $DetailsList-gutter;
+
+  @media (min-width: 680px) {
+    width: 50%;
+  }
+
+  @media (min-width: 1100px) {
+    width: 33.3333%;
+  }
+
+}
+
+$DetailsItem-font-size: 18px;
+
+.DetailsItem {
+  display:          flex;
+  flex-direction:   column;
+  height:           100%;
+  padding:          1em;
+  font-size:        calc-em($DetailsItem-font-size);
+  background-color: #fff;
+}
+
+.DetailsItem-body {
+  flex-grow:  1;
+  text-align: justify;
+
+}
+
+.DetailsItem-header {
+  @extend %link-unstyled;
+  display:     flex;
+  align-items: baseline;
+}
+
+.DetailsItem-title {
+  margin:         0;
+  text-transform: uppercase;
+  white-space:    nowrap;
+  font-size:      calc-em(24px, $DetailsItem-font-size);
+  font-weight:    400;
+  color:          $color-brand-pink;
+}
+
+.DetailsItem-icon {
+  position:         relative;
+  flex-shrink:      0;
+  height:           $DetailsItem-icon-size;
+  width:            $DetailsItem-icon-size;
+  margin-right:     .5em;
+  background-color: $color-brand-pink;
+  color:            #fff;
+  overflow:         hidden;
+
+  > svg {
+    position: absolute;
+    left:     0;
+    bottom:   0;
+    height:   100%;
+    width:    100%;
+    fill:     currentColor;
+  }
+
+  &--lodging > svg {
+    left:   13%;
+    bottom: -9%;
+    height: 90%;
+    width:  90%;
+  }
+
+  &--food > svg {
+    left:   -40%;
+    bottom: -53%;
+    height: 142%;
+    width:  142%;
+  }
+
+  &--resources > svg {
+    left:   -2%;
+    bottom: -27%;
+    height: 93%;
+    width:  93%;
+  }
+
+  &--travel > svg {
+    left:   -19%;
+    bottom: -18%;
+    height: 110%;
+    width:  110%;
+  }
+
+  &--tickets > svg {
+    left:   -4%;
+    bottom: -26%;
+    height: 130%;
+    width:  130%;
+  }
+
+}
+
+.DetailsItem-button {
+  @include link-colors(lighten($color-brand-purple, 15%), darken($color-brand-purple, 10%));
+  display:       inline-flex;
+  align-items:   center;
+  padding:       .5em 0;
+  border-radius: 3px;
+  //background-color: $color-brand-pink;
+
+  &:hover {
+    text-decoration: none;
+  }
+
+  > svg {
+    margin-left: .5em;
+    height:      .75em;
+    width:       .75em;
+  }
+
+}

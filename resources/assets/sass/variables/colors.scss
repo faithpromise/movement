@@ -1,0 +1,50 @@
+//
+// Grayscale
+//
+
+$color-black: #000;
+$color-gray-darkest: lighten($color-black, 13.5%); // #222222
+$color-gray-darker: lighten($color-black, 26.5%); // #444444
+$color-gray-dark: lighten($color-black, 46.7%); // #777777
+$color-gray: lighten($color-black, 66.5%); // #aaaaaa
+$color-gray-light: lighten($color-black, 87%); // #dedede
+$color-gray-lighter: lighten($color-black, 93.75%); // #efefef
+$color-gray-lightest: lighten($color-black, 97.25%); // #f8f8f8
+$color-white: #fff;
+
+//
+// Color palette
+//
+
+$color-brand-orange: #ee7e39;
+$color-brand-teal: #67b7a7;
+$color-brand-yellow: #e4b949;
+$color-brand-blue: #8dc7d8;
+$color-brand-green: #50ae66;
+$color-brand-pink: #e65da0;
+$color-brand-purple: #444a93;
+$color-brand-peach: #f3af84;
+
+//
+// Root
+//
+
+$root-background-color: $color-white;
+$root-text-color: #6b7c93;
+$titles-text-color: $color-gray-darker;
+
+//
+// Selections
+//
+
+$selection-background-color: $color-brand-pink;
+$selection-inactive-background-color: $color-white;
+
+//
+// Anchors
+//
+
+$anchor-color: #08c;
+$anchor-color-visited: lighten($anchor-color, 15%);
+$anchor-color-hover: $anchor-color;
+$anchor-color-active: $anchor-color;

@@ -1,0 +1,133 @@
+.Schedule {
+  position:         relative;
+  //background-color: #00bee0;
+  //background-color: $color-brand-blue;
+  background-color: #000010;
+  color:            #fff;
+
+  //@media (max-width: calc-em(599px)) {
+  //  padding-top:    18vw;
+  //  padding-bottom: 7vw;
+  //}
+
+  @media (min-width: calc-em(600px)) {
+    display:         flex;
+    justify-content: center;
+  }
+
+}
+
+.Schedule-content {
+  @include fluid-size(padding-top, 320px, 120px, 760px, 180px);
+
+  padding-bottom: 12vw;
+
+  @media (max-width: calc-em(599px)) {
+    @include container();
+  }
+
+  @media (min-width: calc-em(600px)) {
+    @include container-padding(620px, 160px);
+    flex-shrink: 1;
+  }
+
+}
+
+.Schedule-image {
+  position:  relative;
+  flex-grow: 1;
+
+  > img {
+    @include object-fit(cover);
+    position: absolute;
+    top:      0;
+    right:    0;
+    bottom:   0;
+    left:     0;
+    height:   100%;
+    width:    100%;
+  }
+
+  @media (max-width: calc-em(600px)) {
+    display: none;
+  }
+
+}
+
+.Schedule-title {
+  @extend .Section-title;
+  margin:         0 0 .5em;
+  font-weight:    normal;
+  text-transform: uppercase;
+  color:          #fff;
+}
+
+.Schedule-list {
+  margin-bottom: 3em;
+  &:not(.is-active) {
+    display: none;
+  }
+}
+
+.Schedule-label {
+  @include fluid-type(320px, 17px, 1400px, 24px);
+}
+
+.Schedule-time {
+  @include fluid-type(320px, 17px, 1400px, 20px);
+  white-space:   nowrap;
+  padding-right: 1em;
+}
+
+.Schedule-tabs {
+  @extend %list-unstyled;
+  display:       flex;
+  margin-bottom: 2em;
+  margin-left:   -.5em;
+  user-select:   none;
+  box-shadow:    0 4px 0 currentColor;
+
+  > li {
+    position:  relative;
+    width:     33.333%;
+    min-width: 110px;
+  }
+
+  span {
+    display:        block;
+    padding:        1em;
+    //border:         4px solid #fff;
+    text-transform: uppercase;
+    text-align:     center;
+    cursor:         pointer;
+
+    &:hover {
+      background-color: rgba(255, 255, 255, .3);
+    }
+
+    &.is-active {
+      box-shadow:  0 4px 0 currentColor;
+      font-weight: 700;
+
+      &:before {
+        content:       '';
+        position:      absolute;
+        bottom:        0;
+        left:          50%;
+        display:       block;
+        width:         0;
+        height:        0;
+        margin-left:   -8px;
+        border-left:   8px solid transparent;
+        border-right:  8px solid transparent;
+        border-bottom: 8px solid currentColor;
+      }
+
+      &:hover {
+        background-color: transparent;
+      }
+    }
+
+  }
+
+}

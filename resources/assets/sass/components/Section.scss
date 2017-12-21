@@ -1,0 +1,41 @@
+.Section {
+  @include fluid-size(padding-top, 320px, 80px, 960px, 180px);
+  position:       relative;
+  padding-bottom: 7vw;
+}
+
+.Section--dark {
+  background-color: $color-gray-darkest;
+  color:            $color-white;
+}
+
+.Section-background {
+  @include object-fit(cover);
+  position: absolute;
+  top:      0;
+  left:     0;
+  height:   100%;
+  width:    100%;
+}
+
+.Section-overlay {
+  position:         absolute;
+  top:              0;
+  right:            0;
+  bottom:           0;
+  left:             0;
+  background-color: rgba(0, 0, 0, .1);
+}
+
+.Section-container {
+  @extend %Container;
+  position: relative;
+}
+
+.Section-title {
+  @include fluid-type(320px, 48px, 1400px, 72px);
+  //font-size:   calc-em(80px);
+  letter-spacing: 2px;
+  margin:         0 0 calc-em(48px, 80px);
+  font-family:    "bebas-neue", sans-serif;
+}

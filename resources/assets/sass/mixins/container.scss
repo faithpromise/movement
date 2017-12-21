@@ -1,0 +1,12 @@
+@mixin container-padding($width: $Container-max-width, $padding: $Container-padding-h) {
+  @include fluid-size(padding-right, 320px, 16px, $Container-max-width, $padding);
+  @include fluid-size(padding-left, 320px, 16px, $Container-max-width, $padding);
+}
+
+@mixin container($max-width: $Container-max-width, $padding: $Container-padding-h) {
+  @include container-padding($max-width, $padding);
+  width:         100%;
+  max-width:     calc-em($max-width);
+  margin-right:  auto;
+  margin-left:   auto;
+}

@@ -11,6 +11,15 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+use Illuminate\Support\Facades\Route;
+
+Route::get('/', 'Controller@index');
+Route::get('/about', 'Controller@about');
+Route::get('/tickets', 'Controller@tickets');
+Route::get('/travel', 'Controller@travel');
+Route::get('/lodging', 'Controller@lodging');
+Route::get('/food', 'Controller@food');
+Route::get('/resources', 'Controller@resources');
+Route::get('/schedule', 'Controller@schedule');
+Route::get('/contact', 'Controller@contact');
+Route::get('/speakers/{slug}', 'Controller@speaker');

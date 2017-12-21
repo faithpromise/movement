@@ -1,0 +1,27 @@
+*,
+::before,
+::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing:       border-box;
+  font-family:      $font-family-sans-serif;
+  //@include fluid-type;
+  line-height:      $line-height-ratio;
+  height:           auto; /* iOS position:fixed; elements fix (not 100%) */
+  background-color: $root-background-color;
+  color:            $root-text-color;
+}
+
+body {
+  margin:           0;
+  background-color: $root-background-color;
+  color:            $root-text-color;
+}
+
+@import "a";
+@import "img";
+@import "svg";
+@import "h1-h6";
+//@import "paragraph-text";

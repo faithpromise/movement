@@ -1,0 +1,91 @@
+$Nav-link-font-size: 30px;
+$Nav-logo-height: 54px;
+$Nav-full-at: 680px;
+
+// Calculated
+$Nav-mobile-to: $Nav-full-at - 1px;
+
+.Nav {
+  position:    absolute;
+  z-index:     1;
+  top:         0;
+  left:        0;
+  width:       100%;
+  padding:     calc-em(20px) 0;
+  color:       #fff;
+  user-select: none;
+}
+
+.Nav-container {
+  @include container-padding(1200px, 40px);
+  display:         flex;
+  justify-content: space-between;
+}
+
+.Nav-menu {
+  @extend %list-unstyled;
+  display:     flex;
+  align-items: center;
+
+  @media (min-width: calc-em($Nav-full-at)) {
+
+    &.Nav-menu--mobile {
+      display: none;
+    }
+
+  }
+
+  @media (max-width: calc-em($Nav-mobile-to)) {
+
+    &.Nav-menu--desktop {
+      display: none;
+    }
+
+  }
+
+}
+
+.Nav-logo,
+.Nav-link {
+  @include link-colors-all(#fff);
+}
+
+.Nav-logo > svg {
+  height: calc-em($Nav-logo-height);
+  width:  calc-em($Nav-logo-height * .972);
+}
+
+.Nav-link {
+  display:        block;
+  padding:        0 calc-em(16px, $Nav-link-font-size);
+  line-height:    calc-em(60px, $Nav-link-font-size);
+  font-size:      calc-em($Nav-link-font-size);
+  font-family:    "bebas-neue", sans-serif;
+  letter-spacing: 1px;
+
+  &--button {
+    margin-left:   calc-em(16px, $Nav-link-font-size);
+    border:        2px solid $color-white;
+    border-radius: 4px;
+    transition:    background-color .25s ease;
+
+    &:hover {
+      text-decoration:  none;
+      background-color: rgba(255, 255, 255, 0.25);
+    }
+
+  }
+
+}
+
+.Nav-toggle {
+
+  display: block;
+  cursor:  pointer;
+
+  &,
+  > svg {
+    height: calc-em(42px);
+    width:  calc-em(42px);
+  }
+}

@@ -1,0 +1,52 @@
+@mixin ratio-image() {
+  position:         relative;
+  height:           0;
+  background-color: $color-gray-light;
+
+  > img,
+  > video {
+    @include object-fit(cover);
+    position: absolute;
+    top:      0;
+    left:     0;
+    height:   100%;
+    width:    100%;
+  }
+
+}
+
+@mixin ratio-image-square() {
+  @include ratio-image;
+  padding-top: 100%;
+}
+
+@mixin ratio-image-9x6() {
+  @include ratio-image;
+  padding-top: 67%;
+}
+
+@mixin ratio-image-16x9() {
+  @include ratio-image;
+  padding-top: 56.25%;
+}
+
+// For extending...
+
+%ratio-image {
+  @include ratio-image;
+}
+
+%ratio-image-square {
+  @extend %ratio-image;
+  padding-top: 100%;
+}
+
+%ratio-image-16x9 {
+  @extend %ratio-image;
+  padding-top: 56.25%;
+}
+
+%ratio-image-9x6 {
+  @extend %ratio-image;
+  padding-top: 66.7%;
+}
