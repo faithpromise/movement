@@ -1,0 +1,44 @@
+.Footer {
+  @extend .Section;
+  text-align:       center;
+  background-color: $color-gray-darkest;
+  color:            #fff;
+}
+
+.Footer-container {
+  @extend .Section-container;
+}
+
+.Footer-buttons {
+  @extend %list-unstyled;
+
+  display:         flex;
+  flex-wrap:       wrap;
+  justify-content: center;
+
+  li {
+    margin: 1em .5em;
+  }
+
+  a {
+    @extend %link-unstyled;
+    @include link-colors-all(#fff);
+    @include fluid-type(320px, 32px, 760px, 56px);
+    display:        inline-block;
+    padding:        .4em .8em;
+    border:         2px solid #fff;
+    border-radius:  4px;
+    font-family:    "bebas-neue", sans-serif;
+    letter-spacing: 1px;
+
+    &:hover {
+      background-color: $color-gray-darker;
+    }
+  }
+
+}
+
+.Footer-social {
+  @include fluid-type(320px, 24px, 760px, 40px);
+  margin-top: 1em;
+}

@@ -1,14 +1,25 @@
 .Schedule {
-  position:         relative;
   //background-color: #00bee0;
   //background-color: $color-brand-blue;
   background-color: #000010;
   color:            #fff;
 
-  //@media (max-width: calc-em(599px)) {
-  //  padding-top:    18vw;
-  //  padding-bottom: 7vw;
-  //}
+  position:         relative;
+  overflow:         hidden;
+
+  &:before {
+    @include fluid-size(margin-top, 320px, -60px, 960px, -120px);
+    content:          '';
+    position:         absolute;
+    z-index:          3;
+    display:          block;
+    background-color: #fff;
+    height:           200px;
+    width:            200%;
+    top:              0;
+    left:             -50%;
+    transform:        rotate(4deg);
+  }
 
   @media (min-width: calc-em(600px)) {
     display:         flex;
@@ -18,8 +29,8 @@
 }
 
 .Schedule-content {
-  @include fluid-size(padding-top, 320px, 120px, 760px, 180px);
 
+  padding-top:    200px;
   padding-bottom: 12vw;
 
   @media (max-width: calc-em(599px)) {

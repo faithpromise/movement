@@ -18,29 +18,7 @@
             <h1 class="HomeHeader-title">Movement</h1>
             <p class="HomeHeader-dates">{{ $conference_start_date->format('F j') }}-{{ $conference_end_date->format('j, Y') }}</p>
             <div class="HomeHeader-social">
-                <ul class="SocialList">
-                    <li class="SocialList-item">
-                        <a class="SocialList-link" href="">
-                            <svg role="img" class="SocialIcon">
-                                <use xlink:href="#icon-facebook"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="SocialList-item">
-                        <a class="SocialList-link" href="">
-                            <svg role="img" class="SocialIcon">
-                                <use xlink:href="#icon-twitter"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="SocialList-item">
-                        <a class="SocialList-link" href="">
-                            <svg role="img" class="SocialIcon">
-                                <use xlink:href="#icon-instagram"></use>
-                            </svg>
-                        </a>
-                    </li>
-                </ul>
+                @include('_social')
             </div>
         </div>
     </div>
@@ -52,15 +30,8 @@
     -->
 
     <div id="speakers" class="SpeakersSection">
-        {{--<div class="SectionDivider-1">--}}
-        {{--<img src="http://placehold.it/300x100">--}}
-        {{--<svg>--}}
-        {{--<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#divider-1"></use>--}}
-        {{--</svg>--}}
-        {{--</div>--}}
         <div class="SpeakersSection-container">
             <h2 class="SpeakersSection-title">Speakers</h2>
-
             @include('_speakers')
         </div>
     </div>
@@ -80,14 +51,13 @@
         </div>
 
         <div class="Schedule-image">
-            <img src="/images/stage-lights.jpg">
-        </div>
-
-        <div class="SectionDivider-2">
-            <img src="http://placehold.it/300x24">
-            <svg>
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#divider-2"></use>
-            </svg>
+            <img
+                    src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                    sizes="(max-width: 940px) 33vw, 50vw"
+                    srcset="
+                        https://faithpromise.imgix.net/movement/stage-smoke-and-balls.jpg?auto=compress%2Cformatw=1920&amp;h={{ 1920 * .5625 }} 1920w,
+                        https://faithpromise.imgix.net/movement/stage-smoke-and-balls.jpg?auto=compress%2Cformatw=1680&amp;h={{ 1680 * .5625 }} 1680w,
+                    ">
         </div>
 
     </div>

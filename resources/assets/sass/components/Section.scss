@@ -1,7 +1,8 @@
 .Section {
   @include fluid-size(padding-top, 320px, 80px, 960px, 180px);
+  @include fluid-size(padding-bottom, 320px, 40px, 960px, 90px);
   position:       relative;
-  padding-bottom: 7vw;
+  //padding-bottom: 7vw;
 }
 
 .Section--dark {

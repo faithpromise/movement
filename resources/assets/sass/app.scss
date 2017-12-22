@@ -6,68 +6,14 @@
 @import "base/base";
 @import "components/components";
 
-[v-cloak] {
-  display: none;
-}
-
 html.has-popup {
   min-height:      100vh;
-  background:      $color-gray-darkest url('/images/popup-bg.jpg') no-repeat fixed 50% 0;
+  background:      $color-gray-darkest url('https://faithpromise.imgix.net/movement/popup-bg.jpg') no-repeat fixed 50% 0;
   background-size: cover;
 
   > body {
     background-color: transparent;
   }
-}
-
-/**
- * 1. Remove whitespace
- */
-.SectionDivider-1,
-.SectionDivider-2,
-.SectionDivider-3 {
-  position:  absolute;
-  top:       0;
-  left:      0;
-  width:     100%;
-  font-size: 0; /* 1 */
-  overflow:  hidden;
-
-  img {
-    width:      100%;
-    visibility: hidden;
-  }
-
-  /**
-   * 1. Fixes an issue where the browser miscalculates and adds space between svg and viewport
-   */
-  > svg {
-    position:  absolute;
-    top:       0;
-    left:      0;
-    width:     100%;
-    height:    100%;
-    transform: scaleX(1.1); /* 1 */
-  }
-
-}
-
-.SectionDivider-1 {
-  top: -7vw;
-
-  > svg {
-    fill: $color-brand-yellow;
-  }
-
-}
-
-.SectionDivider-2,
-.SectionDivider-3 {
-  > svg {
-    top:  -2px; // Browser calculation can be off, creating a hairline
-    fill: $color-white;
-  }
-
 }
 
 .pt-0 {

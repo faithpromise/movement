@@ -1,17 +1,45 @@
 
 .Countdown {
   @extend .Section;
-  background-color: $color-brand-green;
-  color:            #fff;
+
+  text-align: center;
+  color:      #fff;
+
+  position:   relative;
+  overflow:   hidden;
+
+  &:before {
+    @include fluid-size(margin-top, 320px, -60px, 960px, -120px);
+    content:          '';
+    position:         absolute;
+    display:          block;
+    background-color: $color-brand-green;
+    height:           1000px;
+    width:            200%;
+    //top:              60px;
+    left:             -50%;
+    transform:        rotate(-4deg);
+  }
 }
 
 .Countdown-container {
-  @extend .Section-container;
+  position:        relative;
+  display:         flex;
+  flex-wrap:       wrap;
+  align-items:     center;
+  justify-content: center;
+  padding:         0 16px;
+}
+
+.Countdown-title,
+.Countdown-clock {
+  margin: calc-rem(24px) 0;
 }
 
 .Countdown-title {
   @extend .Section-title;
   @include fluid-type(320px, 48px, 1080px, 100px);
+  max-width:   calc-em(520px);
   line-height: 1;
   color:       darken($color-brand-green, 25%);
   text-shadow: 0 1px 0 rgba(255, 255, 255, .4);

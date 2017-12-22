@@ -49,24 +49,19 @@
         </div>
 
 
-        @yield('page')
+    @yield('page')
 
 
-        <!--
+    <!--
           |--------------------------------------
           | Countdown
           |--------------------------------------
         -->
 
         <div class="Countdown">
-            <div class="SectionDivider-3">
-                <img src="http://placehold.it/300x24">
-                <svg>
-                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#divider-3"></use>
-                </svg>
-            </div>
             <div class="Countdown-container">
-                <h2 class="Countdown-title">Countdown to <span class="nowrap">Movement 18</span></h2>
+                <h2 class="Countdown-title"><span class="nowrap">Countdown to</span>
+                    <span class="nowrap">Movement 18</span></h2>
                 <div class="Countdown-clock">
                     <div class="Countdown-slot">
                         <span id="countdown_days" class="Countdown-digit">74</span>
@@ -84,6 +79,29 @@
                         <span id="countdown_seconds" class="Countdown-digit">29</span>
                         <span class="Countdown-label">SEC</span>
                     </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!--
+          |--------------------------------------
+          | Footer
+          |--------------------------------------
+        -->
+
+        <div class="Footer">
+            <div class="Footer-container">
+                <ul class="Footer-buttons">
+                    <li>
+                        <a href="#">Register Now</a><!-- TODO: Link -->
+                    </li>
+                    <li>
+                        <a href="/contact">Contact Us</a>
+                    </li>
+                </ul>
+                <div class="Footer-social">
+                    @include('_social')
                 </div>
             </div>
         </div>
