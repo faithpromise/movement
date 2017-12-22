@@ -28,7 +28,7 @@
                         <a class="Nav-link" href="/schedule">Schedule</a>
                     </li>
                     <li class="Nav-item">
-                        <a class="Nav-link Nav-link--button">Register</a>
+                        <a class="Nav-link Nav-link--button" href="#">Register</a><!-- TODO: Link -->
                     </li>
                 </ul>
 

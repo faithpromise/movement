@@ -1,7 +1,7 @@
 <?php
 $body_class = 'has-popup';
 $popup_icon = str_replace('/', '', $_SERVER['REQUEST_URI']);
-$nav = ['about', 'tickets', 'travel', 'lodging', 'food', 'resources'];
+$nav = ['about', 'tickets', 'travel', 'lodging', 'food', 'resources', 'contact'];
 ?>
 
 @extends('layout-base')
@@ -32,7 +32,12 @@ $nav = ['about', 'tickets', 'travel', 'lodging', 'food', 'resources'];
                     <use xlink:href="#icon-{{ $popup_icon }}"></use>
                 </svg>
             </div>
-            @yield('page')
+            <div class="Popup-text">
+                @yield('page')
+            </div>
+
+            @include('_popup_footer')
+
         </div>
     </div>
 @endsection

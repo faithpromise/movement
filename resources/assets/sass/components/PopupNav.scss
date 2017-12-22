@@ -5,19 +5,23 @@ $PopupNav-link-size-to: 40px;
   @extend %list-unstyled;
 
   display:         flex;
+  flex-wrap:       wrap;
   align-items:     center;
   justify-content: center;
-  padding:         ($Popup-icon-size / 3) 0;
+  margin:          $Popup-gutter 0;
 }
 
 .PopupNav-link {
   @include link-colors(#fff, $color-brand-blue, #fff, #fff, #fff);
 
-  padding: 1em;
+  display: block;
+  margin:  .5em 1em;
 
   > svg {
-    @include fluid-size(height, 320px, $PopupNav-link-size-from, 760px, $PopupNav-link-size-to);
-    @include fluid-size(width, 320px, $PopupNav-link-size-from, 760px, $PopupNav-link-size-to);
-    fill: currentColor;
+    //@include fluid-size(height, 320px, $PopupNav-link-size-from, 760px, $PopupNav-link-size-to);
+    //@include fluid-size(width, 320px, $PopupNav-link-size-from, 760px, $PopupNav-link-size-to);
+    height: $PopupNav-link-size-to;
+    width:  $PopupNav-link-size-to;
+    fill:   currentColor;
   }
 }

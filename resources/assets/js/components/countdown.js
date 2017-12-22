@@ -1,3 +1,5 @@
+// https://taylorhakes.com/posts/creating-a-clock-with-setinterval/
+
 export default {
 
     init() {
@@ -7,40 +9,39 @@ export default {
           enter number and format
           days, hours, minutes or seconds
         */
-        countDownClock(20, 'days');
+        countDownClock(window.movement.conference_start);
 
     }
 
 }
 
-let conference_start = Date.UTC(2018, 7, 12, 18, 30);
-
-function countDownClock() {
+function countDownClock(conference_start) {
 
     let d              = document,
         daysElement    = d.getElementById('countdown_days'),
         hoursElement   = d.getElementById('countdown_hours'),
         minutesElement = d.getElementById('countdown_minutes'),
         secondsElement = d.getElementById('countdown_seconds'),
-        countdown      = void 0;
+        one_second     = 1000;
 
-    timer();
+    if (daysElement)
+        timer(displayTimeLeft);
 
-    function timer() {
+    function timer(fn) {
 
-        let then = conference_start;
+        let timestamp     = Date.now(),
+            timeout_after = one_second - (timestamp % one_second);
 
-        countdown = setInterval(function () {
-            let secondsLeft = Math.round((then - Date.now()) / 1000);
+        setTimeout(function () {
 
-            if (secondsLeft <= 0) {
-                clearInterval(countdown);
-                return;
-            }
+            let secondsLeft = Math.round((conference_start - timestamp) / one_second);
 
-            displayTimeLeft(secondsLeft);
+            fn(secondsLeft);
 
-        }, 1000);
+            if (secondsLeft)
+                timer(fn)
+        }, timeout_after);
+
     }
 
     function displayTimeLeft(seconds) {

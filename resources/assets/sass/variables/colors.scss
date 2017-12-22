@@ -20,6 +20,7 @@ $color-brand-orange: #ee7e39;
 $color-brand-teal: #67b7a7;
 $color-brand-yellow: #e4b949;
 $color-brand-blue: #8dc7d8;
+$color-brand-blue-dark: darken($color-brand-blue, 30%);
 $color-brand-green: #50ae66;
 $color-brand-pink: #e65da0;
 $color-brand-purple: #444a93;
@@ -44,7 +45,7 @@ $selection-inactive-background-color: $color-white;
 // Anchors
 //
 
-$anchor-color: #08c;
+$anchor-color: $color-brand-blue-dark;
 $anchor-color-visited: lighten($anchor-color, 15%);
 $anchor-color-hover: $anchor-color;
 $anchor-color-active: $anchor-color;

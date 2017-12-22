@@ -14,7 +14,7 @@ $dividers_sprite = SvgSprite::make(public_path("images/dividers"));
 $body_class = isset($body_class) ? $body_class : '';
 
 ?><!doctype html>
-<html lang="{{ app()->getLocale() }}">
+<html lang="{{ app()->getLocale() }}" class="{{ $body_class }}">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -27,13 +27,19 @@ $body_class = isset($body_class) ? $body_class : '';
 
         <link rel="stylesheet" href="{{ $is_production ? mix($css_url) : '/' . $css_url . uniqid('?') }}">
     </head>
-    <body class="{{ $body_class }}">
+    <body>
 
         {!! $icons_sprite !!}
         {!! $dividers_sprite !!}
 
         @yield('content')
 
+        <script>
+            window.movement = {
+                <?= 'conference_start: ' . $conference_start_date->timestamp * 1000 . ',' ?>
+                <?= 'conference_end: ' . $conference_end_date->timestamp * 1000 . ',' ?>
+            };
+        </script>
         <script src="{{ $is_production ? mix('/js/app.js') : '/js/app.js' . uniqid('?') }}"></script>
 
     </body>

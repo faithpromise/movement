@@ -1,7 +1,11 @@
 $Popup-icon-size: 128px;
+$Popup-gutter: 40px;
 
 .Popup {
-  padding: 0 3vw 20vw;
+  @include fluid-size(padding-left, 320px, 8px, 680px, 40px);
+  @include fluid-size(padding-right, 320px, 8px, 680px, 40px);
+
+  padding-bottom: 20vw;
 
   a {
     text-decoration: underline;
@@ -11,13 +15,46 @@ $Popup-icon-size: 128px;
   }
 }
 
-.Popup-content {
+.Popup-footer {
+  margin-top:       3em;
+  padding:          2em 0;
+  background-color: $color-gray-lighter;
+  border-radius:    8px;
+}
 
+.Popup-register {
+  @include link-colors-all($anchor-color);
+  display:         flex;
+  align-items:     center;
+  max-width:       300px;
+  margin:          0 auto;
+  padding:         1em;
+  border-radius:   4px;
+  font-size:       calc-em(24px);
+  text-align:      center;
+  text-transform:  uppercase;
+  //background-color: $anchor-color;
+
+  text-decoration: none !important;
+
+  &:hover {
+    > span {
+      text-decoration: underline;
+    }
+  }
+
+  > svg {
+    height:      1em;
+    width:       1em;
+    margin-left: 1em;
+  }
+}
+
+.Popup-content {
   position:         relative;
   max-width:        680px;
-  margin:           0 auto;
+  margin:           $Popup-gutter auto 0;
   padding-top:      3em;
-  padding-bottom:   3em;
   border-radius:    8px;
   background-color: #fff;
 }
@@ -40,7 +77,8 @@ $Popup-icon-size: 128px;
   }
 }
 
-.Popup-icon {
+.Popup-icon,
+.Popup-iconImg {
   height:           $Popup-icon-size;
   width:            $Popup-icon-size;
   margin:           -($Popup-icon-size / 2) auto 0;
@@ -48,19 +86,40 @@ $Popup-icon-size: 128px;
   text-align:       center;
   border:           8px solid #fff;
   border-radius:    $Popup-icon-size;
-
-  background-color: $color-brand-blue;
+  background-color: $color-brand-blue-dark;
+  overflow:         hidden;
 
   > svg {
     height: $Popup-icon-size / 1.5;
     width:  $Popup-icon-size / 1.5;
-    fill:   darken($color-brand-blue, 30%);
+    fill:   $color-brand-blue;
   }
+
 }
 
-.Popup {
+.Popup-iconImg {
+  background-color:    $color-gray-darkest;
+  background-position: center;
+  background-size:     cover;
+}
 
-  h1, h3, p, ul, table {
+.Popup-h2 {
+  @include fluid-size(padding-left, 320px, 16px, 680px, 48px);
+  @include fluid-size(padding-right, 320px, 16px, 680px, 48px);
+
+  margin:           2em 0;
+  padding-top:      .5em;
+  padding-bottom:   .5em;
+  text-transform:   uppercase;
+  text-align:       center;
+  font-weight:      300;
+  background-color: $color-gray-lighter;
+  color:            darken($color-brand-blue, 50%);
+}
+
+.Popup-text {
+
+  h1, h3, p, ul, table, form {
 
     @include fluid-size(margin-left, 320px, 16px, 680px, 48px);
     @include fluid-size(margin-right, 320px, 16px, 680px, 48px);
@@ -74,17 +133,7 @@ $Popup-icon-size: 128px;
   }
 
   h2 {
-
-    @include fluid-size(padding-left, 320px, 16px, 680px, 48px);
-    @include fluid-size(padding-right, 320px, 16px, 680px, 48px);
-
-    margin-top:       2em;
-    padding-top:      .5em;
-    padding-bottom:   .5em;
-    text-transform:   uppercase;
-    font-weight:      300;
-    background-color: $color-brand-blue;
-    color:            darken($color-brand-blue, 50%);
+    @extend .Popup-h2;
   }
 
   h3 {
@@ -97,4 +146,9 @@ $Popup-icon-size: 128px;
     margin-top: .5em;
   }
 
+}
+
+.Popup-social {
+  font-size:  calc-em(32px);
+  text-align: center;
 }

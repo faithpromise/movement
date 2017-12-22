@@ -10,10 +10,14 @@
   display: none;
 }
 
-body.has-popup {
+html.has-popup {
   min-height:      100vh;
-  background:      url('/images/popup-bg.jpg') no-repeat fixed 50% 0;
+  background:      $color-gray-darkest url('/images/popup-bg.jpg') no-repeat fixed 50% 0;
   background-size: cover;
+
+  > body {
+    background-color: transparent;
+  }
 }
 
 /**

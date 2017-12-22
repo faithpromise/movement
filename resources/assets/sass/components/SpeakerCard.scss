@@ -1,10 +1,32 @@
+$Speaker-open-size: 24px;
+
 .SpeakerCard {
   text-align: center;
 }
 
-.SpeakerCard-image {
-  //width:     100%;
-  //max-width: calc-em(530px);
+.SpeakerCard-photo {
+  @extend %link-unstyled;
+  position: relative;
+  display:  block;
+
+  > img {
+    transition: transform .25s ease-in-out;
+  }
+
+  &:hover > img {
+    transform: scale(1.02);
+  }
+
+}
+
+.Speaker-open {
+  position: absolute;
+  z-index:  1;
+  top:      1em;
+  right:    1em;
+  height:   $Speaker-open-size;
+  width:    $Speaker-open-size;
+  fill:     $color-brand-yellow;
 }
 
 //.SpeakerCard-info {
