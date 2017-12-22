@@ -14,4 +14,12 @@ ready(() => {
     scheduleTabs.init();
     countdown.init();
 
+    // Prevent multiple form submissions
+    let form = document.querySelector('form');
+    if (form) {
+        form.addEventListener('submit', function () {
+            this.querySelector('[type="submit"]').setAttribute('disabled', 'disabled');
+        }, false);
+    }
+
 });
