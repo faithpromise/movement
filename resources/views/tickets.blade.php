@@ -41,7 +41,7 @@
     <p>Yes. There will be a youth leader track available during student small group times.</p>
 
     <h3>How do I contact Movement if I have a question about my payment?</h3>
-    <p>You can contact us here (hyperlink).</p><!-- TODO: link -->
+    <p>Please use our easy <a href="/contact">contact form</a>.</p>
 
     <h2>Tickets / Wristbands</h2>
 

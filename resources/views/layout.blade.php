@@ -28,7 +28,7 @@
                         <a class="Nav-link" href="/schedule">Schedule</a>
                     </li>
                     <li class="Nav-item">
-                        <a class="Nav-link Nav-link--button" href="#">Register</a><!-- TODO: Link -->
+                        <a class="Nav-link Nav-link--button" href="https://www.universe.com/events/movement-conference-2018-tickets-knoxville-17QGJL" target="_blank">Register</a>
                     </li>
                 </ul>
 
@@ -94,7 +94,7 @@
             <div class="Footer-container">
                 <ul class="Footer-buttons">
                     <li>
-                        <a href="#">Register Now</a><!-- TODO: Link -->
+                        <a href="https://www.universe.com/events/movement-conference-2018-tickets-knoxville-17QGJL" target="_blank">Register Now</a>
                     </li>
                     <li>
                         <a href="/contact">Contact Us</a>
