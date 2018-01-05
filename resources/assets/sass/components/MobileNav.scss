@@ -1,0 +1,63 @@
+.Nav-toggle {
+  position: relative;
+}
+
+.MobileNav {
+  position:         absolute;
+  top:              0;
+  right:            0;
+  width:            86vw;
+  padding:          3em;
+  border-radius:    8px;
+  background-color: #fff;
+
+  body:not(.nav-open) & {
+    display: none;
+  }
+}
+
+.MobileNav-menu {
+  @extend %list-unstyled;
+}
+
+.MobileNav-close {
+  position: absolute;
+  top:      .5em;
+  right:    .5em;
+  padding:  .25em;
+  cursor:   pointer;
+
+  &:hover > svg {
+    fill: $color-gray-dark;
+  }
+
+  > svg {
+    height: 22px;
+    width:  22px;
+    fill:   $color-gray;
+  }
+}
+
+.MobileNav-link {
+  display:        block;
+  padding:        0 calc-em(16px, $Nav-link-font-size);
+  line-height:    calc-em(60px, $Nav-link-font-size);
+  font-size:      calc-em($Nav-link-font-size);
+  font-family:    "bebas-neue", sans-serif;
+  text-align:     center;
+  letter-spacing: 1px;
+
+  &--button {
+    margin-left:   calc-em(16px, $Nav-link-font-size);
+    border:        2px solid $color-white;
+    border-radius: 4px;
+    transition:    background-color .25s ease;
+
+    &:hover {
+      text-decoration:  none;
+      background-color: rgba(255, 255, 255, 0.25);
+    }
+
+  }
+
+}

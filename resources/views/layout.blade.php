@@ -1,3 +1,9 @@
+<?php
+
+$tickets_url = 'https://www.universe.com/events/movement-conference-2018-tickets-knoxville-17QGJL';
+
+?>
+
 @extends('layout-base')
 
 @section('content')
@@ -28,7 +34,7 @@
                         <a class="Nav-link" href="/schedule">Schedule</a>
                     </li>
                     <li class="Nav-item">
-                        <a class="Nav-link Nav-link--button" href="https://www.universe.com/events/movement-conference-2018-tickets-knoxville-17QGJL" target="_blank">Register</a>
+                        <a class="Nav-link Nav-link--button" href="{{ $tickets_url }}" target="_blank">Register</a>
                     </li>
                 </ul>
 
@@ -37,11 +43,35 @@
                         <a class="Nav-link">Register</a>
                     </li>
                     <li class="Nav-item">
-                            <span class="Nav-toggle">
-                                <svg role="img" class="SocialIcon">
-                                    <use xlink:href="#icon-menu"></use>
-                                </svg>
-                            </span>
+                        <div class="Nav-toggle">
+                            <svg id="js-mobile-open" role="img" class="SocialIcon">
+                                <use xlink:href="#icon-menu"></use>
+                            </svg>
+
+                            <div class="MobileNav">
+                                <span id="js-mobile-close" class="MobileNav-close">
+                                    <svg>
+                                        <use xlink:href="#icon-close"></use>
+                                    </svg>
+                                </span>
+
+                                <ul id="js-mobile-menu" class="MobileNav-menu">
+                                    <li class="MobileNav-item">
+                                        <a class="MobileNav-link" href="/about">About</a>
+                                    </li>
+                                    <li class="MobileNav-item">
+                                        <a class="MobileNav-link" href="#speakers">Speakers</a>
+                                    </li>
+                                    <li class="MobileNav-item">
+                                        <a class="MobileNav-link" href="/schedule">Schedule</a>
+                                    </li>
+                                    <li class="MobileNav-item">
+                                        <a class="MobileNav-link" href="{{ $tickets_url }}">Register</a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </div>
                     </li>
                 </ul>
 
@@ -94,7 +124,7 @@
             <div class="Footer-container">
                 <ul class="Footer-buttons">
                     <li>
-                        <a href="https://www.universe.com/events/movement-conference-2018-tickets-knoxville-17QGJL" target="_blank">Register Now</a>
+                        <a href="{{ $tickets_url }}" target="_blank">Register Now</a>
                     </li>
                     <li>
                         <a href="/contact">Contact Us</a>

@@ -1,5 +1,6 @@
-import scheduleTabs from './components/schedule-tabs.js';
 import countdown from './components/countdown.js';
+import mobileNav from './components/mobile-nav.js';
+import scheduleTabs from './components/schedule-tabs.js';
 
 function ready(fn) {
     if (document.attachEvent ? document.readyState === "complete" : document.readyState !== "loading") {
@@ -11,6 +12,7 @@ function ready(fn) {
 
 ready(() => {
 
+    mobileNav.init();
     scheduleTabs.init();
     countdown.init();
 
