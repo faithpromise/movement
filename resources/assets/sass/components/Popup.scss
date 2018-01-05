@@ -146,6 +146,17 @@ $Popup-gutter: 40px;
     margin-top: .5em;
   }
 
+  form {
+    max-width:  480px;
+    margin-top:    2em;
+    margin-bottom: 2em;
+
+    @media (min-width: calc-em(670px)) {
+      margin-left:  auto;
+      margin-right: auto;
+    }
+  }
+
 }
 
 .Popup-social {
