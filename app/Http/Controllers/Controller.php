@@ -69,7 +69,7 @@ class Controller extends BaseController {
         $message->save();
 
 //        try {
-            Mail::to('jeffc@faithpromise.org')
+            Mail::to('taylorh@faithpromise.org')
                 ->send(new MessageReceived($message));
             $message->sent_at = Carbon::now('UTC');
             $message->save();
