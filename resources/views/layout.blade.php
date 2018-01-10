@@ -40,11 +40,11 @@ $tickets_url = 'https://www.universe.com/events/movement-conference-2018-tickets
 
                 <ul class="Nav-menu Nav-menu--mobile">
                     <li class="Nav-item">
-                        <a class="Nav-link">Register</a>
+                        <a class="Nav-link" href="{{ $tickets_url }}">Register</a>
                     </li>
                     <li class="Nav-item">
                         <div class="Nav-toggle">
-                            <svg id="js-mobile-open" role="img" class="SocialIcon">
+                            <svg id="js-mobile-open" role="img">
                                 <use xlink:href="#icon-menu"></use>
                             </svg>
 

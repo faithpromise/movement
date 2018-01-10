@@ -19,6 +19,7 @@ $body_class = isset($body_class) ? $body_class : '';
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="apple-mobile-web-app-capable" content="yes">
 
         <title>Movement Conference</title>
 
