@@ -1,9 +1,3 @@
-<?php
-
-$tickets_url = 'https://www.universe.com/events/movement-conference-2018-tickets-knoxville-17QGJL';
-
-?>
-
 @extends('layout-base')
 
 @section('content')

@@ -17,13 +17,13 @@
     <p>Your registration fee covers your conference admission and three meals only. Please visit the lodging page for more information about local accommodations. You also may want to bring additional money to purchase Movement merchandise.</p>
 
     <h3>Can registrations be cancelled or transferred?</h3>
-    <p>Thank you for understanding that no refunds or transfers are available. If you would like to transfer your Movement ticket to someone else, please contact us here (hyperlink).</p><!-- TODO: link -->
+    <p>Thank you for understanding that no refunds or transfers are available. If you would like to transfer your Movement ticket to someone else, please <a href="/contact">contact us</a>.</p>
 
     <h3>Do I have to register now, or can I do it at the door?</h3>
     <p>There will be 1-Day Only conference tickets available at the door each day as space permits; however, these tickets are first come, first serve, so we recommend purchasing your tickets ahead of time online.</p>
 
     <h3>Are there special rates available for large groups?</h3>
-    <p>Yes. Click here (hyperlink) for complete details on pricing.</p><!-- TODO: link -->
+    <p>Yes. Check our <a href="{{ $tickets_url }}">registration page</a> for complete details on pricing.</p>
 
     <h3>How do I request group seating for my group?</h3>
     <p>All seating at Movement will be divided into Seating Communities based on your registration date. Those who register first will be placed in the best Seating Community rotations. If your group resisters together, you will be placed in the same seating community, as space permits.</p>
@@ -32,7 +32,7 @@
     <p>No, you do not need to include every registrant’s name; include your name and the number of people you wish to register.</p>
 
     <h3>Are there day or session passes available?</h3>
-    <p>Yes. Click here (hyperlink) to view all available ticket options.</p><!-- TODO: link -->
+    <p>Yes. Check our <a href="{{ $tickets_url }}">registration page</a> to view all available ticket options.</p>
 
     <h3>I am a member of Faith Promise Church. Is there a special registration rate available?</h3>
     <p>Yes. If you are an fpStudents student or volunteer, choose the appropriate option when purchasing your tickets online.</p>

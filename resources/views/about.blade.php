@@ -20,7 +20,7 @@
         <a href="/schedule">complete schedule</a></p>
 
     <h3>Will there be a sign language interpreter at Movement?</h3>
-    <p>If you or a student need an interpreter, please fill out a request form here (hyperlink).</p><!-- TODO: link -->
+    <p>If you or a student need an interpreter, please <a href="/contact">contact us</a>.</p>
 
     <h3>Will there be childcare available during the conference?</h3>
     <p>No. While families are extremely important to us, there will not be childcare available during the conference and we are unable to accommodate children. Please make outside arrangements for childcare if you plan to attend Movement.</p>

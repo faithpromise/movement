@@ -17,20 +17,27 @@ use Illuminate\Support\Facades\Mail;
 class Controller extends BaseController {
     use AuthorizesRequests, DispatchesJobs, ValidatesRequests;
 
+    private $tickets_url = 'https://www.universe.com/events/movement-conference-2018-tickets-knoxville-17QGJL';
+
     public function index() {
 
         return view('welcome', [
             'guests'    => Guest::orderBy('sort')->get(),
             'schedules' => ScheduleService::getGroupedSchedule(),
+            'tickets_url' => $this->tickets_url,
         ]);
     }
 
     public function about() {
-        return view('about');
+        return view('about', [
+            'tickets_url' => $this->tickets_url,
+        ]);
     }
 
     public function tickets() {
-        return view('tickets');
+        return view('tickets', [
+            'tickets_url' => $this->tickets_url,
+        ]);
     }
 
     public function travel() {
