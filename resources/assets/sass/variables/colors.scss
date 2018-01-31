@@ -31,7 +31,7 @@ $color-brand-peach: #f3af84;
 //
 
 $root-background-color: $color-white;
-$root-text-color: #6b7c93;
+$root-text-color: $color-gray-darker;
 $titles-text-color: $color-gray-darker;
 
 //
@@ -45,7 +45,7 @@ $selection-inactive-background-color: $color-white;
 // Anchors
 //
 
-$anchor-color: $color-brand-blue-dark;
+$anchor-color: darken($color-brand-blue, 20%);
 $anchor-color-visited: lighten($anchor-color, 15%);
 $anchor-color-hover: $anchor-color;
 $anchor-color-active: $anchor-color;
