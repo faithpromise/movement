@@ -56,8 +56,7 @@
         <li>*Option for breakfast</li>
         <li>Reservation cut-off date: June 20th, 2018</li>
         <li>Group booking ID: 435387</li>
-        {{--TODO: Add booking link--}}
-        {{--<li>Booking Link:</li>--}}
+        <li><a href="http://www.marriott.com/meeting-event-hotels/group-corporate-travel/groupCorp.mi?resLinkData=Movement%20Conference%202018%20%5Etyscy%60MCOMCOA%60109.00%60USD%60false%604%607/11/18%607/15/18%606/20/18&app=resvlink&stop_mobi=yes">Click here for group booking</a></li>
     </ul>
 
     <hr>
