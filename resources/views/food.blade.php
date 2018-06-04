@@ -8,10 +8,10 @@
     <p>Chick-fil-a chicken sandwiches, chips and cookie</p>
 
     <h3>Friday Dinner</h3>
-    Moe's burritos, chips and salsa, and cookie
+    <p>Moe's burritos, chips and salsa, and cookie</p>
 
-    <h2>Saturday Lunch</h2>
-    Bojangles chicken strips and mac n' cheese
+    <h3>Saturday Lunch</h3>
+    <p>Bojangles chicken strips and mac n' cheese</p>
 
     <h2>F.A.Q.</h2>
 
