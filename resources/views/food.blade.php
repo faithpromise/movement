@@ -4,6 +4,15 @@
 
     <h1>Food</h1>
 
+    <h3>Friday Lunch</h3>
+    <p>Chick-fil-a chicken sandwiches, chips and cookie</p>
+
+    <h3>Friday Dinner</h3>
+    Moe's burritos, chips and salsa, and cookie
+
+    <h2>Saturday Lunch</h2>
+    Bojangles chicken strips and mac n' cheese
+
     <h2>F.A.Q.</h2>
 
     <h3>How do I eat during the conference?</h3>
