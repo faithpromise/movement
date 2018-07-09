@@ -16,7 +16,7 @@
     <p>Movement is designed for middle and high school students (6th-12th grade). Adult student ministry leaders are encouraged to attend with the students they lead. We also allow groups of Youth Leaders to register without bringing their students if they'd like to attend with a leadership/team building focus.</p>
 
     <h3>When does the event begin and end?</h3>
-    <p>Movement begins at 6:30pm on Thursday July 12, and ends at 5:30pm on Saturday, July 14. Check out the
+    <p>Movement begins at 6:00pm on Thursday July 12, and ends at 5:30pm on Saturday, July 14. Check out the
         <a href="/schedule">complete schedule</a></p>
 
     <h3>Will there be a sign language interpreter at Movement?</h3>
