@@ -31,7 +31,8 @@
 
     <style type="text/css">
         table.tableizer-table {
-            font-size: 12px;
+            border-collapse: collapse;
+            font-size: 13px;
             border: 1px solid #CCC;
             font-family: Arial, Helvetica, sans-serif;
         }
@@ -40,14 +41,14 @@
             margin: 3px;
             border: 1px solid #CCC;
         }
-        .tableizer-table th {
-            background-color: #104E8B;
-            color: #FFF;
-            font-weight: bold;
-        }
     </style>
     <table class="tableizer-table">
-        <thead><tr class="tableizer-firstrow"><th>10 things to abandon for spiritual growth</th><th>10 Days</th><th>&nbsp;</th></tr></thead><tbody>
+        <tbody>
+            <tr>
+                <td>10 things to abandon for spiritual growth</td>
+                <th style="width: 70px;">10 Days</th>
+                <th>&nbsp;</th>
+            </tr>
             <tr><td>8 habits of influential person</td><td>8 Days</td><td>Influencing others and making a difference</td></tr>
             <tr><td>Anger</td><td>3 Days</td><td>Anger</td></tr>
             <tr><td>approved</td><td>4 Days</td><td>&nbsp;</td></tr>
@@ -61,19 +62,19 @@
             <tr><td>Dating in the modern age</td><td>7 Days</td><td>&nbsp;</td></tr>
             <tr><td>Dealing with emotional pain</td><td>4 Days</td><td>&nbsp;</td></tr>
             <tr><td>Deep dive 14</td><td>14 Days</td><td>&nbsp;</td></tr>
-            <tr><td>Deeper into scirpture: 1 corinthians</td><td>16 Days</td><td>&nbsp;</td></tr>
-            <tr><td>Deeper into scirpture: 1 John</td><td>5 Days</td><td>&nbsp;</td></tr>
-            <tr><td>Deeper into scirpture: 1 Timothy</td><td>6 Days</td><td>&nbsp;</td></tr>
-            <tr><td>Deeper into scirpture: Ephesians</td><td>6 Days</td><td>&nbsp;</td></tr>
-            <tr><td>Deeper into scirpture: James</td><td>5 Days</td><td>&nbsp;</td></tr>
-            <tr><td>Deeper into scirpture: John</td><td>21 Days</td><td>&nbsp;</td></tr>
-            <tr><td>Deeper into scirpture: philippians</td><td>4 Days</td><td>&nbsp;</td></tr>
-            <tr><td>Deeper into scirpture: Titus</td><td>3 Days</td><td>&nbsp;</td></tr>
+            <tr><td>Deeper into scripture: 1 corinthians</td><td>16 Days</td><td>&nbsp;</td></tr>
+            <tr><td>Deeper into scripture: 1 John</td><td>5 Days</td><td>&nbsp;</td></tr>
+            <tr><td>Deeper into scripture: 1 Timothy</td><td>6 Days</td><td>&nbsp;</td></tr>
+            <tr><td>Deeper into scripture: Ephesians</td><td>6 Days</td><td>&nbsp;</td></tr>
+            <tr><td>Deeper into scripture: James</td><td>5 Days</td><td>&nbsp;</td></tr>
+            <tr><td>Deeper into scripture: John</td><td>21 Days</td><td>&nbsp;</td></tr>
+            <tr><td>Deeper into scripture: philippians</td><td>4 Days</td><td>&nbsp;</td></tr>
+            <tr><td>Deeper into scripture: Titus</td><td>3 Days</td><td>&nbsp;</td></tr>
             <tr><td>Deeper into scripture: 2 peter</td><td>3 Days</td><td>&nbsp;</td></tr>
             <tr><td>Deeper into scripture: Galatians</td><td>6 Days</td><td>&nbsp;</td></tr>
             <tr><td>Ephesians</td><td>3 Days</td><td>&nbsp;</td></tr>
             <tr><td>Essential scriptue for 30 days</td><td>30 Days</td><td>&nbsp;</td></tr>
-            <tr><td>Fight faer</td><td>6 Days</td><td>&nbsp;</td></tr>
+            <tr><td>Fight fear</td><td>6 Days</td><td>&nbsp;</td></tr>
             <tr><td>Fighting FOMO</td><td>14 Days</td><td>&nbsp;</td></tr>
             <tr><td>First Steps For New Believers</td><td>7 Days</td><td>&nbsp;</td></tr>
             <tr><td>How Teens P.R.A.Y.</td><td>4 Days</td><td>&nbsp;</td></tr>
