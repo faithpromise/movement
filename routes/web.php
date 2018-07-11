@@ -21,6 +21,7 @@ Route::get('/lodging', 'Controller@lodging');
 Route::get('/food', 'Controller@food');
 Route::get('/resources', 'Controller@resources');
 Route::get('/schedule', 'Controller@schedule');
+Route::get('/groups', 'Controller@groups');
 Route::get('/contact', 'Controller@contact');
 Route::post('/contact', 'Controller@sendMessage');
 Route::get('/message-preview/{id}', 'Controller@messagePreview');

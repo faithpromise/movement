@@ -60,6 +60,10 @@ class Controller extends BaseController {
         return view('schedule', ['schedules' => ScheduleService::getGroupedSchedule()]);
     }
 
+    public function groups() {
+        return view('groups');
+    }
+
     public function contact() {
         return view('contact');
     }

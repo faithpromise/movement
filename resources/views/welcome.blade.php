@@ -107,6 +107,12 @@
             'link_text' => 'Resources for leaders',
             'slug'      => 'resources',
         ],
+        (object)[
+            'title'     => 'Move Groups',
+            'text'      => 'Move groups is our way of taking the Church outside of the walls of a building and into our communities. As a student, God can use you to encourage and reach people that a pastor couldn’t. You can connect with people before they ever connect to Church, and we believe God will use you and others like you to bring hope to your schools and communities.',
+            'link_text' => 'Learn More',
+            'slug'      => 'groups',
+        ],
     ];
 
     ?>
