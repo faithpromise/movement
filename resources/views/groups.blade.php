@@ -16,8 +16,8 @@
     <h3>How to start a move group:</h3>
     <p>There are 5 steps to starting a move group.</p>
     <ol>
-        <li>Sign-up: When you sign up, we will contact you soon with next steps.</li>
-        <li>Watch the “Welcome to Move Group” Video..</li>
+        <li><a href="https://fpstudents.wufoo.com/forms/move-group-registration/" target="_blank">Sign-up Here</a>: When you sign up, we will contact you soon with next steps.</li>
+        {{--<li>Watch the &quot;Welcome to Move Group&quot; Video.</li>--}}
         <li>Find a place in your school where you can meet consistently.</li>
         <li>Invite people to join you.</li>
         <li>Choose your content. Check out the suggested material below.</li>
