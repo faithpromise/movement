@@ -1,7 +1,7 @@
 <?php
 $body_class = 'has-popup';
 $popup_icon = str_replace('/', '', $_SERVER['REQUEST_URI']);
-$nav = ['about', 'tickets', 'travel', 'lodging', 'food', 'resources', 'contact'];
+$nav = ['about', 'tickets', 'travel', 'lodging', 'food', 'resources', 'groups', 'contact'];
 ?>
 
 @extends('layout-base')
