@@ -17,7 +17,7 @@ use Illuminate\Support\Facades\Mail;
 class Controller extends BaseController {
     use AuthorizesRequests, DispatchesJobs, ValidatesRequests;
 
-    private $tickets_url = 'https://www.universe.com/events/movement-conference-2018-tickets-knoxville-17QGJL';
+    private $tickets_url = 'https://www.universe.com/events/movement-conference-2019-tickets-knoxville-KNCVJS';
 
     public function index() {
 
