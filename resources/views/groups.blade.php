@@ -61,20 +61,20 @@
             </tr>
             <tr>
                 <td>
-                    <a target="_blank" href="https://www.bible.com/reading-plans/4844-approved">approved</a></td>
+                    <a target="_blank" href="https://www.bible.com/reading-plans/4844-approved">Approved</a></td>
                 <td>4 Days</td>
                 <td>&nbsp;</td>
             </tr>
             <tr>
                 <td>
-                    <a target="_blank" href="https://www.bible.com/reading-plans/167-bible-introduction">bible introduction</a>
+                    <a target="_blank" href="https://www.bible.com/reading-plans/167-bible-introduction">Bible introduction</a>
                 </td>
                 <td>7 Days</td>
                 <td>&nbsp;</td>
             </tr>
             <tr>
                 <td>
-                    <a target="_blank" href="https://www.bible.com/reading-plans/807-biblex-where-did-the-bible-come-from">BibleX: where did the bible come from?</a>
+                    <a target="_blank" href="https://www.bible.com/reading-plans/807-biblex-where-did-the-bible-come-from">BibleX: Where did the bible come from?</a>
                 </td>
                 <td>4 Days</td>
                 <td>&nbsp;</td>
@@ -95,7 +95,7 @@
             <tr>
                 <td>
 
-                    <a target="_blank" href="https://www.bible.com/reading-plans/3924-confidence-of-a-champion">Confidence of a champion: 3 Days with MMA fighter Michael cha</a>
+                    <a target="_blank" href="https://www.bible.com/reading-plans/3924-confidence-of-a-champion">Confidence of a Champion: 3 Days with MMA fighter Michael Chandler</a>
 
                 </td>
                 <td>3 Days</td>
@@ -136,56 +136,56 @@
             </tr>
             <tr>
                 <td>
-                    <a target="_blank" href="https://www.bible.com/reading-plans/642-deeper-into-scripture-1-corinthians">Deeper into scirpture: 1 corinthians</a>
+                    <a target="_blank" href="https://www.bible.com/reading-plans/642-deeper-into-scripture-1-corinthians">Deeper into scripture: 1 corinthians</a>
                 </td>
                 <td>16 Days</td>
                 <td>&nbsp;</td>
             </tr>
             <tr>
                 <td>
-                    <a target="_blank" href="https://www.bible.com/reading-plans/649-deeper-into-scripture-1-john">Deeper into scirpture: 1 John</a>
+                    <a target="_blank" href="https://www.bible.com/reading-plans/649-deeper-into-scripture-1-john">Deeper into scripture: 1 John</a>
                 </td>
                 <td>5 Days</td>
                 <td>&nbsp;</td>
             </tr>
             <tr>
                 <td>
-                    <a target="_blank" href="https://www.bible.com/reading-plans/657-deeper-into-scripture-1-timothy">Deeper into scirpture: 1 Timothy</a>
+                    <a target="_blank" href="https://www.bible.com/reading-plans/657-deeper-into-scripture-1-timothy">Deeper into scripture: 1 Timothy</a>
                 </td>
                 <td>6 Days</td>
                 <td>&nbsp;</td>
             </tr>
             <tr>
                 <td>
-                    <a target="_blank" href="https://www.bible.com/reading-plans/643-deeper-into-scripture-ephesians">Deeper into scirpture: Ephesians</a>
+                    <a target="_blank" href="https://www.bible.com/reading-plans/643-deeper-into-scripture-ephesians">Deeper into scripture: Ephesians</a>
                 </td>
                 <td>6 Days</td>
                 <td>&nbsp;</td>
             </tr>
             <tr>
                 <td>
-                    <a target="_blank" href="https://www.bible.com/reading-plans/562-deeper-into-scripture-james">Deeper into scirpture: James</a>
+                    <a target="_blank" href="https://www.bible.com/reading-plans/562-deeper-into-scripture-james">Deeper into scripture: James</a>
                 </td>
                 <td>5 Days</td>
                 <td>&nbsp;</td>
             </tr>
             <tr>
                 <td>
-                    <a target="_blank" href="https://www.bible.com/reading-plans/654-deeper-into-scripture-john">Deeper into scirpture: John</a>
+                    <a target="_blank" href="https://www.bible.com/reading-plans/654-deeper-into-scripture-john">Deeper into scripture: John</a>
                 </td>
                 <td>21 Days</td>
                 <td>&nbsp;</td>
             </tr>
             <tr>
                 <td>
-                    <a target="_blank" href="https://www.bible.com/reading-plans/641-deeper-into-scripture-philippians">Deeper into scirpture: philippians</a>
+                    <a target="_blank" href="https://www.bible.com/reading-plans/641-deeper-into-scripture-philippians">Deeper into scripture: Philippians</a>
                 </td>
                 <td>4 Days</td>
                 <td>&nbsp;</td>
             </tr>
             <tr>
                 <td>
-                    <a target="_blank" href="https://www.bible.com/reading-plans/560-deeper-into-scripture-titus">Deeper into scirpture: Titus</a>
+                    <a target="_blank" href="https://www.bible.com/reading-plans/560-deeper-into-scripture-titus">Deeper into scripture: Titus</a>
                 </td>
                 <td>3 Days</td>
                 <td>&nbsp;</td>
@@ -212,14 +212,14 @@
             </tr>
             <tr>
                 <td>
-                    <a target="_blank" href="https://www.bible.com/reading-plans/2453-essential-scripture-for-30-days">Essential scriptue for 30 days</a>
+                    <a target="_blank" href="https://www.bible.com/reading-plans/2453-essential-scripture-for-30-days">Essential scripture for 30 days</a>
                 </td>
                 <td>30 Days</td>
                 <td>&nbsp;</td>
             </tr>
             <tr>
                 <td>
-                    <a target="_blank" href="https://www.bible.com/reading-plans/1875-fight-fear">Fight faer</a></td>
+                    <a target="_blank" href="https://www.bible.com/reading-plans/1875-fight-fear">Fight Fear</a></td>
                 <td>6 Days</td>
                 <td>&nbsp;</td>
             </tr>
@@ -383,7 +383,7 @@
             </tr>
             <tr>
                 <td>
-                    <a target="_blank" href="https://www.bible.com/reading-plans/993-thirty-one-truths-who-i-am-in-christ">Thrity-One Truths: Who I Am In Christ</a>
+                    <a target="_blank" href="https://www.bible.com/reading-plans/993-thirty-one-truths-who-i-am-in-christ">Thirty-One Truths: Who I Am In Christ</a>
                 </td>
                 <td>32 Days</td>
                 <td>&nbsp;</td>
