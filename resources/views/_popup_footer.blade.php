@@ -1,5 +1,5 @@
 <div class="Popup-footer">
-    @if ($page === 'groups')
+    @if (isset($page) AND $page === 'groups')
         <a class="Popup-register" href="https://fpstudents.wufoo.com/forms/move-group-registration/" target="_blank">
             <span>Register For a Move Group</span>
             <svg role="img">
