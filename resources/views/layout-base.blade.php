@@ -12,7 +12,6 @@ $icons_sprite = SvgSprite::make(public_path("images/svg-icons"), 'icon-');
 $dividers_sprite = SvgSprite::make(public_path("images/dividers"));
 
 $body_class = isset($body_class) ? $body_class : '';
-$page = isset($page) ? $page : '';
 
 ?><!doctype html>
 <html lang="{{ app()->getLocale() }}" class="{{ $body_class }}">
