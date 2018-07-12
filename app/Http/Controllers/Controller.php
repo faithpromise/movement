@@ -61,7 +61,9 @@ class Controller extends BaseController {
     }
 
     public function groups() {
-        return view('groups');
+        return view('groups', [
+            'page' => 'groups',
+        ]);
     }
 
     public function contact() {
