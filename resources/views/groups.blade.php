@@ -17,32 +17,21 @@
     <p>There are 5 steps to starting a move group.</p>
     <ol>
         <li><a href="https://fpstudents.wufoo.com/forms/move-group-registration/" target="_blank">Sign-up Here</a>: When you sign up, we will contact you soon with next steps.</li>
-        {{--<li>Watch the &quot;Welcome to Move Group&quot; Video.</li>--}}
+        <li>Watch the &quot;Welcome to Move Group&quot; Video below.</li>
         <li>Find a place in your school where you can meet consistently.</li>
         <li>Invite people to join you.</li>
         <li>Choose your content. Check out the suggested material below.</li>
     </ol>
 
-    <p>You can also sign up to join an existing move group without leading one.</p>
+    <p>You can also sign up to <a href="https://fpstudents.wufoo.com/forms/move-group-registration/" target="_blank">join an existing move group</a> without leading one.</p>
     <p>The Church works best when we go outside the walls and love people where they are. When students take the love of Christ with them where they go, the world will change. Will you join the Movement?</p>
+
+    <div class='embed-container'><iframe src='https://www.youtube.com/embed/cLxJLj8onCk' frameborder='0' allowfullscreen></iframe></div>
 
     <h3>Suggested Material</h3>
     <p>Choose the content you'd like to use in your Move Group.</p>
 
-    <style type="text/css">
-        table.tableizer-table {
-            border-collapse: collapse;
-            font-size: 13px;
-            border: 1px solid #CCC;
-            font-family: Arial, Helvetica, sans-serif;
-        }
-        .tableizer-table td {
-            padding: 4px;
-            margin: 3px;
-            border: 1px solid #CCC;
-        }
-    </style>
-    <table class="tableizer-table">
+    <table class="Table">
         <tbody>
             <tr>
                 <td>10 things to abandon for spiritual growth</td>
