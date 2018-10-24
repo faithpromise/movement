@@ -32,7 +32,14 @@
     <div id="speakers" class="SpeakersSection">
         <div class="SpeakersSection-container">
             <h2 class="SpeakersSection-title">Speakers</h2>
-            @include('_speakers')
+            @if ($guests->count())
+                @include('_speakers')
+            @else
+                <div class="SpeakersSection-empty">
+                    <h2>Guess who's going to be at Movement this year!</h2>
+                    <p>You'll have to wait and find out! We've got some amazing speakers, musicians, and guests lined up. Stay tuned for the announcement.</p>
+                </div>
+            @endif
         </div>
     </div>
 
